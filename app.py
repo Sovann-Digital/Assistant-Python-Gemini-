@@ -9,6 +9,9 @@ import colorama
 from colorama import Fore, Style
 import itertools
 import threading
+import asyncio
+from audio_package.audio_player import AudioPlayer
+
 
 class VoiceAssistant:
     def __init__(self):
@@ -125,6 +128,8 @@ class VoiceAssistant:
             assistant_response = self.convo.last.text
             print(Fore.GREEN + "Assistant:" + Fore.CYAN + assistant_response + Style.RESET_ALL)
 
+            self.speak(assistant_response)
+
             script_delimiter = "```"
             if script_delimiter in assistant_response:
                 print("This appears to be a script.")
@@ -170,6 +175,10 @@ class VoiceAssistant:
                         else:  # For Unix-like systems
                             os.system('python3 output/output.py')
                 
+    def speak(self, text):
+        app = AudioPlayer()
+        asyncio.run(app.main(text=text, voice='en-US-JennyNeural'))
+
     def run(self):
         try:
             while True:
