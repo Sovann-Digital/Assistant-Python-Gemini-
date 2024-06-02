@@ -70,7 +70,7 @@ This Voice Assistant uses Google's Generative AI and Whisper models to provide a
 
 1. Run the voice assistant script:
     ```
-    python voice_assistant.py
+    python app.py
     ```
 
 2. Interact with the assistant using the console prompts.
