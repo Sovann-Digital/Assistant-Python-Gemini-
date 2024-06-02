@@ -1,0 +1,6 @@
+google-auth
+gTTS
+pygame
+speechrecognition
+faster-whisper
+google-generativeai
