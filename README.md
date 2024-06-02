@@ -87,3 +87,4 @@ This Voice Assistant uses Google's Generative AI and Whisper models to provide a
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/FR5PC0fQL6s?si=isX_N6fnyrOegsOy)
